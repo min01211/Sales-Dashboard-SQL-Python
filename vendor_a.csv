@@ -1,0 +1,6 @@
+OrderID,Date,Product,Qty,Price
+A001,2024-01-01,Widget,5,100
+A002,2024-01-02,Gadget,2,200
+A003,2024-01-03,Widget,3,150
+A004,2024-01-04,Doodad,7,300
+A005,2024-01-05,Gadget,1,200

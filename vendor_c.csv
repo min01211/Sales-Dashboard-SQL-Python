@@ -1,0 +1,6 @@
+Order_Num,Dt,ProductName,Count,Price_USD
+C001,01-01-2024,Gadget,1,200
+C002,02-01-2024,Widget,2,150
+C003,03-01-2024,Doodad,3,300
+C004,04-01-2024,Widget,1,150
+C005,05-01-2024,Gadget,4,200

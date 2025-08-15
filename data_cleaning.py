@@ -1,11 +1,17 @@
 #import pandas
+import os
 import pandas as pd
 from sqlalchemy import create_engine
 
+#Set the Flie Path / DB Setting
+Base = "C://Users/dlwhd/OneDrive/바탕 화면/Projects/Data Cleaning"
+Raw = os.path.join(Base, "datasets", "raw")
+Processed = os.path.join(Base, "datasets", "Processed")
+
 #pd.read_csv('file_name.csv')
-df_1 = pd.read_csv('vendor_a.csv')
-df_2 = pd.read_csv('vendor_b.csv')
-df_3 = pd.read_csv('vendor_c.csv')
+df_1 = pd.read_csv(os.path.join(Raw, 'vendor_a.csv'))
+df_2 = pd.read_csv(os.path.join(Raw, 'vendor_b.csv'))
+df_3 = pd.read_csv(os.path.join(Raw, 'vendor_c.csv'))
 
 #file_name.rename(columns={'previous_name':'new_name'}, inplace = True)
 df_1.rename(columns={'OrderID':'order_id','Date':'order_date','Product':'order_product','Qty':'order_qty','Price':'order_price'}, inplace = True)
